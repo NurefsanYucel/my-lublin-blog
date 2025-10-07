@@ -28,6 +28,13 @@ const sightIcon = new L.Icon({
   popupAnchor: [0, -32],
 });
 
+const activityIcon = new L.Icon({
+  iconUrl: "/icons/activity.png",
+  iconSize: [32, 32],
+  iconAnchor: [16, 32],
+  popupAnchor: [0, -32],
+});
+
 function FitBounds({ places }) {
   const map = useMap();
 
@@ -42,7 +49,7 @@ function FitBounds({ places }) {
 }
 
 export default function MapPage() {
-  const lublinCenter = [51.2469, 22.5684]; // 
+  const lublinCenter = [51.2469, 22.5684];  
 
   const places = [
     { name: "Mrau Cafe", coords: [51.24495332767373, 22.555896210289543], type: "cafe" },
@@ -54,6 +61,10 @@ export default function MapPage() {
     { name: "Old Town", coords: [51.2485, 22.5678], type: "sight" },
     { name: "Nad Zalewem", coords: [51.179864659603346, 22.53982656795776], type: "sight" },
     { name: "Ogród Botaniczny UMCS", coords: [51.265880260439225, 22.516625581454853], type: "sight" },
+    { name: "Let Me Out", coords: [51.24812825458195, 22.569233496798333], type: "activity" },
+    { name: "Kajaki Lublin", coords: [51.19190127410003, 22.52904561213938], type: "activity" },
+    { name: "Kino Perła", coords: [51.244027798001056, 22.567069754470342], type: "activity" },
+    { name: "Aqua Lublin", coords: [51.236740784510026, 22.568970512142215], type: "activity" },
   ];
 
   return (
@@ -72,7 +83,7 @@ export default function MapPage() {
         {/* Circle around Lublin */}
         <Circle
           center={lublinCenter}
-          radius={10000} // ~4km
+          radius={10000} 
           pathOptions={{
             color: "#89cff0", //baby blue
             weight: 2,
@@ -86,7 +97,14 @@ export default function MapPage() {
           <Marker
             key={idx}
             position={place.coords}
-            icon={place.type === "cafe" ? cafeIcon : sightIcon}
+            icon={
+              place.type === "cafe"
+                ? cafeIcon
+                : place.type === "sight"
+                ? sightIcon
+                : activityIcon
+            }
+            
           >
             <Popup>
               <div className="text-center">

@@ -3,25 +3,25 @@ export default function ThingsToSee() {
     {
       name: "Lublin Castle",
       description: "If you ever visit Lublin and see a big white castle on the hill, don’t worry you’re not in a Disney movie. That’s Lublin Castle, a place that has been everything from a royal residence to a prison, and now a museum",
-      image: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noH6jNEZc3hy4_Z1RN413bQeSr04fYRRNewqsqv0M5wtHWa6_NsXd-PDnX3AqiLm9cczSuWF-7G2xoRv3wzzCLMiVSTJobCaALmomYxX0ZOQKDEWfsF_eRSEkK1RUqHJx1Rp2Gm5A=s1360-w1360-h1020-rw",
+      image: "/thingsToSee/castle.webp",
       url: "https://zamek-lublin.pl/",
     },
     {
       name: "Old Town",
       description: "Welcome to Lublin’s Old Town where every street looks like it was designed for postcards, not traffic. Once bustling with merchants and nobles, today it’s full of cafés and tourists pretending they’re in a medieval Instagram filter.",
-      video: "/videos/oldTown.mp4",
+      video: "/thingsToSee/oldTown.mp4",
       url: "https://pl.wikipedia.org/wiki/Stare_Miasto_(Lublin)",
     },
     {
       name: "Nad Zalewem",
       description: "Welcome to Nad Zalewem Lublin’s beach without an sea. Locals come here to swim, sunbathe, and grill enough sausage to qualify as a sport.",
-      video: "/videos/zalew.mp4",
+      video: "/thingsToSee/zalew.mp4",
       url: "https://share.google/Jk1QoHggoePFlIyM1",
     },
     {
       name: "Ogród Botaniczny UMCS",
       description: "Welcome to the UMCS Botanical Garden—where plants from around the world show off while locals pretend they suddenly know Latin. It’s the perfect spot to relax, take a walk, or secretly judge which flower would win in a beauty contest",
-      image: "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npvk8MCnXl6k8hGHU77523Ib0Q6xrFzs6-SxcLIJ1VEZF9Cdlt1DSoQMI_NnhAt-8OMDCGFyeMR4LloZzXYDP9O__qSwS6zqtYciii7mWpFZ9dzWiZaoyXSBwiEXpX0dpNKE7eNDw=s1360-w1360-h1020-rw",
+      image: "thingsToSee/botanicGarden.webp",
       url: "https://www.umcs.pl/pl/zwiedzanie-ogrodu-botanicznego,4795.htm",
     },
   ];

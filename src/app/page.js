@@ -6,6 +6,7 @@ import ThingsToSee from "@/components/ThingsToSee";
 import UsefulLinks from "@/components/UsefulLinks";
 import Footer from "@/components/Footer";
 import Activities from "@/components/Activities";
+import HolidayCalendar from "@/components/HolidayCalendar";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
             bg-white/5 backdrop-blur-md rounded-2xl p-6 
             font-serif italic text-[#f5d38c] tracking-wide"
           >
-            The charm is subtle, but it leaves a mark
+            There’s a timeless charm in the city’s calm and graceful rhythm
           </p>
         </div>
       </main>
@@ -43,6 +44,7 @@ export default function Home() {
       <ThingsToSee />
       <Activities />
       <UsefulLinks />
+      <HolidayCalendar />
       <Footer />
     </div>
   );
